@@ -1,0 +1,137 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "name": [
+          {
+            "text": "Mrs. Saroja"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1952-03-31"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "status": "final",
+        "code": {
+          "text": "Blood Report"
+        },
+        "subject": {
+          "reference": "Patient/1"
+        },
+        "effectiveDateTime": "2023-03-31",
+        "performer": [
+          {
+            "reference": "Practitioner/1"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/1"
+          },
+          {
+            "reference": "Observation/2"
+          },
+          {
+            "reference": "Observation/3"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1",
+        "status": "final",
+        "code": {
+          "text": "Blood Sugar"
+        },
+        "subject": {
+          "reference": "Patient/1"
+        },
+        "effectiveDateTime": "2023-03-31",
+        "valueQuantity": {
+          "value": 82.0,
+          "unit": "mg/dl"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 90.0,
+              "unit": "mg/dl"
+            },
+            "high": {
+              "value": 110.0,
+              "unit": "mg/dl"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "2",
+        "status": "final",
+        "code": {
+          "text": "Blood Urea"
+        },
+        "subject": {
+          "reference": "Patient/1"
+        },
+        "effectiveDateTime": "2023-03-31",
+        "valueQuantity": {
+          "value": 28.4,
+          "unit": "mg/dl"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 10.0,
+              "unit": "mg/dl"
+            },
+            "high": {
+              "value": 40.0,
+              "unit": "mg/dl"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "3",
+        "status": "final",
+        "code": {
+          "text": "Sr. Creatinine"
+        },
+        "subject": {
+          "reference": "Patient/1"
+        },
+        "effectiveDateTime": "2023-03-31",
+        "valueQuantity": {
+          "value": 1.03,
+          "unit": "mg/dl"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.4,
+              "unit": "mg/dl"
+            },
+            "high": {
+              "value": 1.0,
+              "unit": "mg/dl"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

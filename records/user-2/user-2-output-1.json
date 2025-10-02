@@ -1,0 +1,224 @@
+{
+  "resourceType ": "Bundle ",
+  "type ": "collection ",
+  "entry ": [
+    {
+      "resource ": {
+        "resourceType ": "Patient ",
+        "id ": "patient-001 ",
+        "gender ": "male "
+      }
+    },
+    {
+      "resource ": {
+        "resourceType ": "DiagnosticReport ",
+        "id ": "dr-001 ",
+        "status ": "final ",
+        "code ": {
+          "text ": "Laboratory "
+        },
+        "subject ": {
+          "reference ": "Patient/patient-001 "
+        },
+        "note ": [
+          {
+            "text ": "Life Line "
+          },
+          {
+            "text ": "Laboratory "
+          },
+          {
+            "text ": "H.O. : 456, Dr. Murugan Clinic Compound, M.S. Road, Vadasary, Nagorcoil - 629 001. "
+          },
+          {
+            "text ": "B.O. : NH 47, S S Naidu Hospital Compound, Dr. M.E. Naidu Nager, Kottar, Nagorcoil - 629 002. "
+          },
+          {
+            "text ": "SID Date : 24-01-2025 "
+          },
+          {
+            "text ": "SID.No : 16,851 "
+          },
+          {
+            "text ": "OP No : 16,851 "
+          },
+          {
+            "text ": "Sex : MALE "
+          },
+          {
+            "text ": "Report time : 1:55:18PM "
+          },
+          {
+            "text ": "Ref. Dr DR.VENKATESH MD,DCH,DNB,PDF. "
+          },
+          {
+            "text ": "J. Sujidaani, DMLT, B.Sc (Mic "
+          },
+          {
+            "text ": "Lab Incharge "
+          },
+          {
+            "text ": "Dr. Rahul Chandran C.H.MD "
+          },
+          {
+            "text ": "Consultant Pathologist "
+          },
+          {
+            "text ": "96298 11216 "
+          },
+          {
+            "text ": "***End Of Report "
+          }
+        ]
+      }
+    },
+    {
+      "resource ": {
+        "resourceType ": "Observation ",
+        "id ": "obs-001 ",
+        "status ": "final ",
+        "code ": {
+          "text ": "HEMOGLOBIN "
+        },
+        "subject ": {
+          "reference ": "Patient/patient-001 "
+        },
+        "valueQuantity ": {
+          "value ": 11.1,
+          "unit ": "g/dl "
+        },
+        "referenceRange ": [
+          {
+            "text ": "11.5 - 15.5 g/dl "
+          }
+        ]
+      }
+    },
+    {
+      "resource ": {
+        "resourceType ": "Observation ",
+        "id ": "obs-002 ",
+        "status ": "final ",
+        "code ": {
+          "text ": "BLOOD SUGAR (R) "
+        },
+        "subject ": {
+          "reference ": "Patient/patient-001 "
+        },
+        "valueQuantity ": {
+          "value ": 115,
+          "unit ": "mg/dl "
+        },
+        "referenceRange ": [
+          {
+            "text ": "80 - 140 mg/dl "
+          }
+        ]
+      }
+    },
+    {
+      "resource ": {
+        "resourceType ": "Observation ",
+        "id ": "obs-003 ",
+        "status ": "final ",
+        "code ": {
+          "text ": "URINE MICROALBUMINURIA "
+        },
+        "subject ": {
+          "reference ": "Patient/patient-001 "
+        },
+        "valueQuantity ": {
+          "value ": 6.7,
+          "unit ": "mg/l "
+        },
+        "referenceRange ": [
+          {
+            "text ": "0 - 25 mg/l "
+          }
+        ]
+      }
+    },
+    {
+      "resource ": {
+        "resourceType ": "Observation ",
+        "id ": "obs-004 ",
+        "status ": "final ",
+        "code ": {
+          "text ": "TSH (METHOD : ECLIA) "
+        },
+        "subject ": {
+          "reference ": "Patient/patient-001 "
+        },
+        "valueQuantity ": {
+          "value ": 0.6,
+          "unit ": "mlU/ml "
+        },
+        "referenceRange ": [
+          {
+            "text ": "0.35 - 4.94 mlU/ml "
+          }
+        ]
+      }
+    },
+    {
+      "resource ": {
+        "resourceType ": "Observation ",
+        "id ": "obs-005 ",
+        "status ": "final ",
+        "code ": {
+          "text ": "SERUM CREATININE "
+        },
+        "subject ": {
+          "reference ": "Patient/patient-001 "
+        },
+        "valueQuantity ": {
+          "value ": 0.9,
+          "unit ": "mg/dl "
+        },
+        "referenceRange ": [
+          {
+            "text ": "0.6 - 1.4 mg/dl "
+          }
+        ]
+      }
+    },
+    {
+      "resource ": {
+        "resourceType ": "Observation ",
+        "id ": "obs-006 ",
+        "status ": "final ",
+        "code ": {
+          "text ": "GLOMERULAR FILTRATION RATE "
+        },
+        "subject ": {
+          "reference ": "Patient/patient-001 "
+        },
+        "valueQuantity ": {
+          "value ": 81.4,
+          "unit ": "mL/min/1.73 msqu "
+        },
+        "referenceRange ": [
+          {
+            "text ": "90 - 120 mL/min/1.73 msqu "
+          }
+        ]
+      }
+    },
+    {
+      "resource ": {
+        "resourceType ": "Observation ",
+        "id ": "obs-007 ",
+        "status ": "final ",
+        "code ": {
+          "text ": "AGE "
+        },
+        "subject ": {
+          "reference ": "Patient/patient-001 "
+        },
+        "valueQuantity ": {
+          "value ": 79
+        }
+      }
+    }
+  ]
+}

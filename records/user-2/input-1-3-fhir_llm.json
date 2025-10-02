@@ -1,0 +1,216 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "16,851",
+        "name": [
+          {
+            "text": "Patient Name"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2004-01-24"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "16,851",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/16,851"
+        },
+        "effectiveDateTime": "2025-01-24T16:00:00",
+        "performer": [
+          {
+            "reference": "Organization/1"
+          }
+        ],
+        "result": [
+          {
+            "reference": "Observation/hemoglobin"
+          },
+          {
+            "reference": "Observation/blood-sugar"
+          },
+          {
+            "reference": "Observation/urine-microalbuminuria"
+          },
+          {
+            "reference": "Observation/tsh"
+          },
+          {
+            "reference": "Observation/creatinine-egfr"
+          },
+          {
+            "reference": "Observation/serum-creatinine"
+          },
+          {
+            "reference": "Observation/glomerular-filtration-rate"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "hemoglobin",
+        "status": "final",
+        "code": {
+          "text": "Hemoglobin"
+        },
+        "valueQuantity": {
+          "value": 11.1,
+          "unit": "g/dl"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 11.5,
+              "unit": "g/dl"
+            },
+            "high": {
+              "value": 15.5,
+              "unit": "g/dl"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "blood-sugar",
+        "status": "final",
+        "code": {
+          "text": "Blood Sugar (R)"
+        },
+        "valueQuantity": {
+          "value": 115,
+          "unit": "mg/dl"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 80,
+              "unit": "mg/dl"
+            },
+            "high": {
+              "value": 140,
+              "unit": "mg/dl"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "urine-microalbuminuria",
+        "status": "final",
+        "code": {
+          "text": "Urine Microalbuminuria"
+        },
+        "valueQuantity": {
+          "value": 0.6,
+          "unit": "mlU/ml"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0,
+              "unit": "mg/l"
+            },
+            "high": {
+              "value": 25,
+              "unit": "mg/l"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tsh",
+        "status": "final",
+        "code": {
+          "text": "TSH (Method: ECLIA)"
+        },
+        "valueQuantity": {
+          "value": 0.6,
+          "unit": "mlU/ml"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 0.6,
+              "unit": "mg/dl"
+            },
+            "high": {
+              "value": 1.4,
+              "unit": "mg/dl"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "creatinine-egfr",
+        "status": "final",
+        "code": {
+          "text": "Creatinine EGFR"
+        },
+        "valueQuantity": {
+          "value": 79,
+          "unit": "mL/min/1.73 m\u00b2"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 90,
+              "unit": "mL/min/1.73 m\u00b2"
+            },
+            "high": {
+              "value": 120,
+              "unit": "mL/min/1.73 m\u00b2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "serum-creatinine",
+        "status": "final",
+        "code": {
+          "text": "Serum Creatinine"
+        },
+        "valueQuantity": {
+          "value": 0.9,
+          "unit": "mg/dl"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "glomerular-filtration-rate",
+        "status": "final",
+        "code": {
+          "text": "Glomerular Filtration Rate"
+        },
+        "valueQuantity": {
+          "value": 81.4,
+          "unit": "mL/min/1.73 m\u00b2"
+        }
+      }
+    }
+  ]
+}

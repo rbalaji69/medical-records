@@ -1,0 +1,160 @@
+{
+    "resourceType ": "Bundle ",
+    "type ": "collection ",
+    "entry ": [
+      {
+        "resource ": {
+          "resourceType ": "Patient ",
+          "id ": "patient-001 ",
+          "name ": [
+            {
+              "text ": "Mrs. Saroja "
+            }
+          ]
+        }
+      },
+      {
+        "resource ": {
+          "resourceType ": "DiagnosticReport ",
+          "id ": "dr-001 ",
+          "status ": "unknown ",
+          "code ": {
+            "text ": "LIPID PROFILE "
+          },
+          "subject ": {
+            "reference ": "Patient/patient-001 "
+          },
+          "performer ": [
+            {
+              "display ": "VIGNASH LAB "
+            },
+            {
+              "display ": "(A Unit of Vignash Group of Laboratories) "
+            }
+          ],
+          "resultsInterpreter ": [
+            {
+              "display ": "S: Venkateswaran, MD, DCH, DMRD., D (Diab), "
+            }
+          ]
+        }
+      },
+      {
+        "resource ": {
+          "resourceType ": "Observation ",
+          "id ": "obs-001 ",
+          "status ": "unknown ",
+          "code ": {
+            "text ": "Serum Total Cholesterol "
+          },
+          "subject ": {
+            "reference ": "Patient/patient-001 "
+          },
+          "valueQuantity ": {
+            "value ": 238,
+            "unit ": "mgs/dl "
+          }
+        }
+      },
+      {
+        "resource ": {
+          "resourceType ": "Observation ",
+          "id ": "obs-002 ",
+          "status ": "unknown ",
+          "code ": {
+            "text ": "Serum Triglycerides "
+          },
+          "subject ": {
+            "reference ": "Patient/patient-001 "
+          },
+          "valueQuantity ": {
+            "value ": 162,
+            "unit ": "mgs/dl "
+          }
+        }
+      },
+      {
+        "resource ": {
+          "resourceType ": "Observation ",
+          "id ": "obs-003 ",
+          "status ": "unknown ",
+          "code ": {
+            "text ": "HDL Cholesterol "
+          },
+          "subject ": {
+            "reference ": "Patient/patient-001 "
+          },
+          "valueQuantity ": {
+            "value ": 47,
+            "unit ": "mgs/dl "
+          }
+        }
+      },
+      {
+        "resource ": {
+          "resourceType ": "Observation ",
+          "id ": "obs-004 ",
+          "status ": "unknown ",
+          "code ": {
+            "text ": "LDL Cholesterol "
+          },
+          "subject ": {
+            "reference ": "Patient/patient-001 "
+          },
+          "valueQuantity ": {
+            "value ": 156,
+            "unit ": "mgs/dl "
+          }
+        }
+      },
+      {
+        "resource ": {
+          "resourceType ": "Observation ",
+          "id ": "obs-005 ",
+          "status ": "unknown ",
+          "code ": {
+            "text ": "VLDL Cholesterol "
+          },
+          "subject ": {
+            "reference ": "Patient/patient-001 "
+          },
+          "valueQuantity ": {
+            "value ": 33,
+            "unit ": "mgs/dl "
+          }
+        }
+      },
+      {
+        "resource ": {
+          "resourceType ": "Observation ",
+          "id ": "obs-006 ",
+          "status ": "unknown ",
+          "code ": {
+            "text ": "Cholesterol/HDL Ratio "
+          },
+          "subject ": {
+            "reference ": "Patient/patient-001 "
+          },
+          "valueQuantity ": {
+            "value ": 5
+          }
+        }
+      },
+      {
+        "resource ": {
+          "resourceType ": "Observation ",
+          "id ": "obs-007 ",
+          "status ": "unknown ",
+          "code ": {
+            "text ": "LDL/HDL Ratio "
+          },
+          "subject ": {
+            "reference ": "Patient/patient-001 "
+          },
+          "valueQuantity ": {
+            "value ": 3.3
+          }
+        }
+      }
+    ]
+  }
