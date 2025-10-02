@@ -161,7 +161,7 @@ def extract_fhir_bundle_regex(input_file):
     try:
         Bundle(**bundle)  # raises if invalid
     except Exception as e:
-        print("⚠️ Validation warning:", str(e))
+        print("WARNING: Validation warning:", str(e))
 
     return bundle
 
@@ -181,4 +181,4 @@ if __name__ == "__main__":
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(fhir_json, f, indent=2)
 
-    print(f"✅ FHIR Bundle JSON written to {output_file}")
+    print(f"SUCCESS: FHIR Bundle JSON written to {output_file}")

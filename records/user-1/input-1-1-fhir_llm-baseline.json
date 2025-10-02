@@ -1,0 +1,316 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-1",
+        "name": [
+          {
+            "family": "Saroja",
+            "given": [
+              "Mrs."
+            ]
+          }
+        ],
+        "gender": "female"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "diagnosticreport-1",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/us/core/CodeSystem/us-core-diagnosticreport-category",
+                "code": "LAB"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "24323-8",
+              "display": "Lipid panel with direct LDL - Serum or Plasma"
+            }
+          ]
+        },
+        "conclusion": "BLOOD REPORT LIPID PROFILE",
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2023-03-31T00:00:00Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3",
+              "display": "Cholesterol"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 238.0,
+          "unit": "mg/dl",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2023-03-31T00:00:00Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2571-8",
+              "display": "Triglycerides"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 162.0,
+          "unit": "mg/dl",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2023-03-31T00:00:00Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-3",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9",
+              "display": "HDL Cholesterol"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 47.0,
+          "unit": "mg/dl",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2023-03-31T00:00:00Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-4",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18262-6",
+              "display": "LDL Cholesterol"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 156.0,
+          "unit": "mg/dl",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2023-03-31T00:00:00Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-5",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2570-0",
+              "display": "VLDL Cholesterol"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 33.0,
+          "unit": "mg/dl",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2023-03-31T00:00:00Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-6",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2096-6",
+              "display": "Cholesterol/HDL Ratio"
+            }
+          ]
+        },
+        "valueRatio": {
+          "numerator": {
+            "value": 5.0,
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "denominator": {
+            "value": 1.0,
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          }
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2023-03-31T00:00:00Z"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-7",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "18261-8",
+              "display": "LDL/HDL Ratio"
+            }
+          ]
+        },
+        "valueRatio": {
+          "numerator": {
+            "value": 3.3,
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          },
+          "denominator": {
+            "value": 1.0,
+            "system": "http://unitsofmeasure.org",
+            "code": "mg/dL"
+          }
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2023-03-31T00:00:00Z"
+      }
+    }
+  ]
+}
