@@ -1,0 +1,145 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "patient-1",
+        "name": [
+          {
+            "family": "Sujidaani",
+            "given": [
+              "J"
+            ],
+            "text": "J Sujidaani"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2004-01-24"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "diagnosticreport-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Hemoglobin"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2025-01-24T16:55:18Z",
+        "issued": "2025-01-24T16:55:18Z",
+        "performer": [
+          {
+            "reference": "Organization/lab-1"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-1",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2339-0",
+              "display": "Blood sugar"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2025-01-24T16:55:18Z",
+        "valueQuantity": {
+          "value": 11.1,
+          "unit": "mg/dl"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-2",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "14959-1",
+              "display": "Urine microalbuminuria"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2025-01-24T16:55:18Z",
+        "valueQuantity": {
+          "value": 0.6,
+          "unit": "mlU/ml"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-3",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3016-3",
+              "display": "TSH"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2025-01-24T16:55:18Z",
+        "valueQuantity": {
+          "value": 0.6,
+          "unit": "mlU/ml"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "observation-4",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0",
+              "display": "Serum creatinine"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/patient-1"
+        },
+        "effectiveDateTime": "2025-01-24T16:55:18Z",
+        "valueQuantity": {
+          "value": 0.9,
+          "unit": "mg/dl"
+        }
+      }
+    }
+  ]
+}
