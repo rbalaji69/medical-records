@@ -44,7 +44,7 @@
         "subject": {
           "reference": "Patient/patient-001"
         },
-        "effectiveDateTime": "2025-10-02",
+        "effectiveDateTime": "2025-10-05",
         "performer": [
           {
             "display": "Clinical Laboratory"

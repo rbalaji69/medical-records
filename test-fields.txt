@@ -1,0 +1,8 @@
+entry.0.resource.resourceType
+entry.0.resource.name.0.text
+entry.0.resource.gender
+entry.1.resource.resourceType
+entry.1.resource.code.coding.0.display
+entry.2.resource.resourceType
+entry.2.resource.code.coding.0.code
+entry.2.resource.valueQuantity.value
