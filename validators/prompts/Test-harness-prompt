@@ -1,0 +1,22 @@
+Can you build a test harness to take the name of the test-program to run as a parameter e.g. fhir_regext_extract.py or 
+fhir_llm_extract.py? It takes 3 mandatory arguments and one optional fields-list-file and one more optional argument called --baseline. 
+The first argument is the name of the program to run and the second argument is the path of the root directory in which 
+all the test input files are placed either directly or in subdirectories. The third argument is a file-name pattern 
+like *.jpg or *.txt which should be used to identify all the test input files inside the root directory and the 
+test-harness should invoke the test-program against each one of the input files. The test-program is expected to take 
+one argument which is the name of the input-file. The test program will automatically create an output file whose name is of the 
+format <input-file-stem>_<test-program_stem>.json in the same directory as the input file. 
+
+
+
+Also take an additional parameter for the harness called --baseline which if specified will create the baseline files 
+instead of regular output files, using a different name of the format 
+<same-directory-as-input-file>/<input-file-stem>-<test-program-stem>-baseline.json. 
+
+So the idea is, I will keep running without baseline parameter and when I am satisfied with the results by looking at the 
+regular output files, I will run it again now with the baseline parameter so that the baseline files are generated/refreshed. 
+When each test is run, if a baseline file exists for that test input-file, then the comparison is done between the regular output 
+and the baseline file as mentioned below and it indicates pass/fail message for that test. If it does not exist, it says pass with a message 
+saying "without baseline". Please let me know if you need clarification on any of the requirements.
+
+

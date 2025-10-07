@@ -1,0 +1,9 @@
+Instead of doing a full file compare, can you only look at a specified set of fields that are given in an input file which is a list of JSON fields each of which can be a deeply nested field name. For example I can have an input file to the test harness that contains the following four lines: 
+entry.resource.resourceType
+entry.resource.name.family
+entity.resource.code.coding.display
+entity.resource.valueQuantity.value
+
+and in this case, the test harness for this run, should only look at the specified list of JSON fields for comparing the output JSON with the baseline JSON when deciding whether they all matched and hence the test passed or failed. If it fails for a given input, you should indicate which of the specified list of JSON fields had a difference and what was in the baseline and what was in the output.
+
+The file-name with the list of JSON fields to be used will be taken as an additional argument before the --baseline parameter.
